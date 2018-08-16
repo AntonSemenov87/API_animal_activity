@@ -10,12 +10,18 @@
 
 </head>
 <style>
+    body {
+        background-image: url("background.jpeg");
+        position: absolute;
+    }
+
     .animalButtons {
-        color: gray;
+        color: blue;
         text-align: center;
         width: 100px;
         height: 100px;
         border-radius: 5px;
+        margin: 10px;
     }
 
     #addAnimal {
@@ -24,14 +30,17 @@
 </style>
 
 <body>
-    <div id="animalButtons"></div>
-    <div id="animal-form">
-        <label for="animal-input"> Add an animal </label>
-        <input type="text" id="animal-input">
-        <button id="addAnimal" value="Submit">Submit</button>
-    </div>
+    <div class="container">
+        <h1>Animals Search</h1>
+        <div id="animalButtons"></div>
+        <div id="animal-form">
+            <label for="animal-input"> Add an animal </label>
+            <input type="text" id="animal-input">
+            <button id="addAnimal" value="Submit">Submit</button>
+        </div>
 
-    <div id="animals"></div>
+        <div id="animals"></div>
+    </div>
 
     <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
         crossorigin='anonymous'></script>
